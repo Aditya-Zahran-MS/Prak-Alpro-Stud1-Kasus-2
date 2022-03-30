@@ -81,5 +81,40 @@ int main() {
 		ayambakar=0;
 	}
 	
+	 	biaya=(geprek*21000)+(goreng*17000)+(udang*19000)+(cumi*20000)+(bakar*21000);
+	cout<<"Total Pesanan : "<<endl;
+	cout<<"1. Ayam Geprek  : "<<geprek*21000<<endl;
+	cout<<"2. Ayam Goreng  : "<<goreng*17000<<endl;
+	cout<<"3. Udang Goreng : "<<udang*19000<<endl;
+  	cout<<"4. Cumi Goreng  : "<<cumi*20000<<endl;
+	cout<<"5. Ayam Bakar   : "<<bakar*21000<<endl;
+	cout<<"_____________"<<endl;
+	cout<<"Total Harga    : "<<biaya<<endl;
+	
+	cout<<"Masukkan Jarak Pengantaran : ";
+	cin>>jarak;
+	
+	if(jarak>3) {
+		pajakjarak=25000;
+	}
+	else {
+		pajakjarak=15000;
+	}  
+	
+  	if(biaya>=25000)  
+      	{  
+           diskon=pajakjarak-3000;  
+      	}  
+  	else if(biaya>=50000)  
+      	{  
+           diskon=0.15*biaya+(pajakjarak-5000);  
+      	}
+	else if (biaya>=150000){
+		diskon=0.35*biaya+(pajakjarak-8000);
+		
+	}  
+ 	 biayatotal=biaya-diskon;
+	
+	
 	return 0;
 }
