@@ -142,7 +142,7 @@ int main() {
   	cout<<"Uang Kembalian  = "<<kembalian<<endl; 
 
 	myFile<<"Nota Pembayaran:   "<<endl;  
-    myFile<<"1. Ayam Goreng  : "<<goreng*17000<<endl;
+    	myFile<<"1. Ayam Goreng  : "<<goreng*17000<<endl;
 	myFile<<"2. Ayam Bakar   : "<<bakar*21000<<endl; 
 	myFile<<"3. Udang Goreng : "<<udang*19000<<endl;
   	myFile<<"4. Cumi Goreng  : "<<cumi*20000<<endl;
@@ -156,4 +156,6 @@ int main() {
   	myFile<<"Bayar     	     = "<<bayar; kembalian=bayar-biayatotal;  
   	myFile<<"         ______________________"<<endl;  
   	myFile<<"Uang Kembalian  = "<<kembalian<<endl;   
+	
+	
 }
